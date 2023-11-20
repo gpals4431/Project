@@ -10,7 +10,7 @@ import lombok.Data;
         private int pageSize;//하나의 페이지에 출력될 게시글의 갯수
         private int blockSize;//하나의 블럭에 출력될 페이지 번호의 갯수
 
-        //생성자로 초기화된 필드값을 계산하여 결과값을 필드에 저장
+        //생성자로 초기화된 필드값을 계산하여 결과값을 필드에 저장ee
         private int totalPage;//전체 페이지의 갯수
         private int startRow;//요청 페이지에 출력될 게시글의 시작 행번호
         private int endRow;//요청 페이지에 출력될 게시글의 종료 행번호
