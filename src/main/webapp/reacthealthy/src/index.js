@@ -8,6 +8,7 @@ import Main from '../src/views/main.js'
 import reportWebVitals from './reportWebVitals';
 import Header from '../src/layout/header.js';
 import Footer from '../src/layout/footer.js';
+import CrewReg from "./views/crew-reg";
 import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

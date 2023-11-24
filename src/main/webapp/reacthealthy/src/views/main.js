@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import ReactDOM from 'react-dom';
 import '../styles/css/bootstrap.min.css';
 //import '../styles/css/elegant-icons.css';
@@ -26,7 +27,7 @@ const Info = () => {
                                         <span>FRUIT FRESH</span>
                                         <h2>Vegetable <br />100% Organic</h2>
                                         <p>Free Pickup and Delivery Available</p>
-                                        <a href="#" className="primary-btn">SHOP NOW</a>
+                                        <Link to="/crew/reg" className="primary-btn">SHOP NOW</Link>
                                     </div>
                                 </div>
                                 <br />
