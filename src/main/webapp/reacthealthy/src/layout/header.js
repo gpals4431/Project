@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from "react-router-dom";
 const Header = () => {
     return (
 //Header Section Begin
@@ -102,7 +102,7 @@ const Header = () => {
                 <div class="col-lg-3">
                     <div class="header__cart">
                         <ul>
-                            <li><a href="#">구독중</a></li>
+                            <li><a href="/crew/reg">크루</a></li>
                             <li><a href="#">구독하기</a></li>
                             <li><a href="#"><i class="fa fa-comment-dots"></i> <span>3</span></a></li>
                         </ul>
