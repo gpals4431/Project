@@ -28,17 +28,3 @@ public class Crew {
 
 
 }
-    CREATE TABLE `crew` (
-        `IDX` bigint(20) NOT NULL AUTO_INCREMENT,
-        `USER_IDX` bigint(20) DEFAULT NULL,
-        `SUBJECT` varchar(200) DEFAULT NULL,
-        `CATEGORY` varchar(100) DEFAULT NULL,
-        `CONTENT` varchar(1000) DEFAULT NULL,
-        `IMG1` varchar(100) DEFAULT NULL,
-        `IMG2` varchar(100) DEFAULT NULL,
-        `CREATION_DATE` date DEFAULT NULL,
-        `CREW_COUNT` int(11) DEFAULT NULL,
-        `DEADLINE` date DEFAULT NULL,
-        `LOCATION` varchar(100) DEFAULT NULL,
-        PRIMARY KEY (`IDX`)
-        ) ENGINE=InnoDB DEFAULT CHA

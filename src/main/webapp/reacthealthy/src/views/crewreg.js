@@ -66,13 +66,4 @@ const Crew = () => {
     )
 }
 
-const CrewReg=() =>{
-    return (
-        <div>
-            <Crew />
-        </div>
-    );
-};
-
-
-export default CrewReg;
+export default Crew;
