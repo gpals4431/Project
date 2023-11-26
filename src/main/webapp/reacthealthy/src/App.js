@@ -6,6 +6,8 @@ import Main from './views/main';
 import Crew from './views/crewreg';
 import CrewList from './views/crew';
 import CrewBoard from './views/crewdetail';
+import QuestionForm from './views/questionform';
+import Question from './views/question';
 
 function App() {
   return (
@@ -21,6 +23,11 @@ function App() {
       <Route path="/crew/comment" element={<Crew />} />
       {/* 크루 댓글수정 */}
       <Route path="/crew/update/:idx" element={<Crew />} />
+
+      {/* 문의게시판 목록 */}
+      <Route path="/question" element={<Question />} />
+      {/* 문의게시판 등록 */}
+      <Route path="/question/form" element={<QuestionForm />} />
     </Routes>
   );
 }
