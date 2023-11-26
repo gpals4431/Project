@@ -36,7 +36,7 @@ const Header = () => {
                             </ul >
                         </li >
                         <li><Link to="#" >크루모집</Link></li >
-                        <li><Link to="#" >문의게시판</Link></li >
+                        <li><Link to="/question" >문의게시판</Link></li >
                     </ul >
                 </nav >
                 <div id="mobile-menu-wrap"></div>
