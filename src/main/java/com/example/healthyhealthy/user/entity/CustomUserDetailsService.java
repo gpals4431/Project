@@ -6,6 +6,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import com.example.healthyhealthy.user.entity.User;
 
 @Service
 @RequiredArgsConstructor
@@ -19,6 +20,6 @@ public class CustomUserDetailsService implements UserDetailsService {
             throw new UsernameNotFoundException(id);
         }
 
-        return null;
+        return new CustomUserDetails(user);
     }
 }
