@@ -1,10 +1,16 @@
 package com.example.healthyhealthy.user.entity;
 
-import lombok.Data;
+import lombok.*;
 
-@Data
+import java.util.List;
+
+@Getter
+@Setter
+@EqualsAndHashCode
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
-    private Long idx;
+    private long idx;
     private String id;
     private String password;
     private String name;
@@ -21,4 +27,6 @@ public class User {
     private int subscription;
     private String subDay;
     private String enabled;
+
+    private List<UserAuth> userAuthList;
 }

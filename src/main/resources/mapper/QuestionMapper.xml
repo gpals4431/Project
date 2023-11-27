@@ -24,7 +24,7 @@
         )
     </insert>
 
-    <select id="selectQuestionList" resultType=QUESTION>
+    <select id="selectQuestionList" resultType="Question">
         SELECT
             IDX
             ,TITLE

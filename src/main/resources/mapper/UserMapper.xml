@@ -21,7 +21,7 @@
         <result column="enabled" property="enabled"/>
     </resultMap>
 
-    <select id="selectUser" resultType="accountResultMap">
+    <select id="selectUser" resultType="userResultMap">
         SELECT
             IDX
             ,ID
