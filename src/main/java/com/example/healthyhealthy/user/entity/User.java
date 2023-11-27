@@ -1,4 +1,4 @@
-package com.example.healthyhealthy.user.dto;
+package com.example.healthyhealthy.user.entity;
 
 import lombok.*;
 
@@ -10,7 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-    private long userIdx;
+    private long idx;
     private String id;
     private String password;
     private String name;

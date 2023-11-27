@@ -1,4 +1,4 @@
-package com.example.healthyhealthy.user.dto;
+package com.example.healthyhealthy.user.entity;
 
 import lombok.Data;
 
