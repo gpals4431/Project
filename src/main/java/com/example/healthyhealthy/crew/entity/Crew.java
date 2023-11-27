@@ -20,6 +20,7 @@ public class Crew {
     private String img2;
     private Date creation_date;
     private Integer crew_count;
+    private Integer enjoy_count;
     private Date deadline;
     private String location;
 
