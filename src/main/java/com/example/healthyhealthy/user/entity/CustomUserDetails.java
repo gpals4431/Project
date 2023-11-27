@@ -1,7 +1,7 @@
-package com.example.healthyhealthy.user.dto;
+package com.example.healthyhealthy.user.entity;
 
-import com.example.healthyhealthy.user.dto.User;
-import com.example.healthyhealthy.user.dto.UserAuth;
+import com.example.healthyhealthy.user.entity.User;
+import com.example.healthyhealthy.user.entity.UserAuth;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -19,7 +19,7 @@ import java.util.List;
 @ToString
 public class CustomUserDetails implements UserDetails {
 
-    private long userIdx;
+    private long idx;
     private String id;
     private String password;
     private String name;
@@ -40,7 +40,7 @@ public class CustomUserDetails implements UserDetails {
 
     // 생성자에 멤버 객체 정보 주입
     public CustomUserDetails(User user) {
-        this.userIdx = user.getUserIdx();
+        this.idx = user.getIdx();
         this.id = user.getId();
         this.password = user.getPassword();
         this.name = user.getName();

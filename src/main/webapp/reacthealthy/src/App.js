@@ -8,6 +8,7 @@ import CrewList from './views/crew';
 import CrewBoard from './views/crewdetail';
 import QuestionForm from './views/questionform';
 import Question from './views/question';
+import JoinForm from './views/join';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
       <Route path="/question" element={<Question />} />
       {/* 문의게시판 등록 */}
       <Route path="/question/form" element={<QuestionForm />} />
+
+      {/* 회원가입 */}
+      <Route path='/join' element={<JoinForm/>} />
     </Routes>
   );
 }

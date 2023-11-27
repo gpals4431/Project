@@ -1,10 +1,14 @@
 package com.example.healthyhealthy.util.security;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
+@Configuration
+@EnableWebSecurity
+public class SpringSecurityConfig {
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
@@ -15,14 +19,12 @@ public class SpringSecurityConfig  {
     @Bean
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(AbstractHttpConfigurer::disable
-                )
-                .authorizeHttpRequests((authorizeHttpRequests) -> 
-                        authorizeHttpRequests
-                                //모든 요청을 허락
-                            .requestMatchers(new AntPathRequestMatcher("/**")).permitAll()
+                .csrf().disable()
+                .authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests
+                        .requestMatchers(new AntPathRequestMatcher("/**"))//모든 요청 허락
+                        .permitAll())
 
-                );
+        ;
         return http.build();
       }
 }
