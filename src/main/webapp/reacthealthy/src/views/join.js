@@ -76,9 +76,9 @@ const JoinForm = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div style={{width: '100%', text-align: 'center'}}>
+                                        <div style={{width: '100%', textAlign: 'center'}}>
 
-                                            <button type="submit" class="site-btn" style="text-align: center;">회원가입</button>
+                                            <button type="submit" class="site-btn" style={{textAlign: 'center'}}>회원가입</button>
                                         </div>
                                     </br>
 
