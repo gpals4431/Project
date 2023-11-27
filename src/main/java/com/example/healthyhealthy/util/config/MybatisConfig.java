@@ -1,4 +1,4 @@
-package com.example.healthyhealthy.config;
+package com.example.healthyhealthy.util.config;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
