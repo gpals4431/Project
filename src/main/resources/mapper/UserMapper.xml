@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.healthyhealthy.user.mapper.UserMapper">
+    <resultMap type="User" id="userResultMap">
+        <id column="id" property="id" />
+        <result column="idx" property="idx"/>
+        <result column="password" property="password"/>
+        <result column="name" property="name"/>
+        <result column="phone" property="phone"/>
+        <result column="email" property="email"/>
+        <result column="gender" property="gender"/>
+        <result column="birth" property="birth"/>
+        <result column="address1" property="address1"/>
+        <result column="address2" property="address2"/>
+        <result column="address3" property="address3"/>
+        <result column="height" property="height"/>
+        <result column="weight" property="weight"/>
+        <result column="status" property="status"/>
+        <result column="subscription" property="subscription"/>
+        <result column="subDay" property="subDay"/>
+        <result column="enabled" property="enabled"/>
+    </resultMap>
+
+    <select id="selectUser" resultType="accountResultMap">
+        SELECT
+            IDX
+            ,ID
+            ,PASSWORD
+            ,NAME
+            ,PHONE
+            ,EMAIL
+            ,GENDER
+            ,BIRTH
+            ,ADDRESS1
+            ,ADDRESS2
+            ,ADDRESS3
+            ,HEIGHT
+            ,WEIGHT
+            ,STATUS
+            ,SUBSCRIPTION
+            ,SUB_DAY
+            ,ENABLED
+        FROM USER WHERE ID=#{id}
+    </select>
+
+</mapper>
