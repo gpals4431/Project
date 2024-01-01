@@ -20,5 +20,5 @@ public class SpringSecurityConfig  {
                         .requestMatchers(new AntPathRequestMatcher("/**"))//모든 요청 허락
                         .permitAll());
         return http.build();
-      }
+    }
 }

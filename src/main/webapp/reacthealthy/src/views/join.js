@@ -12,6 +12,9 @@ import '../styles/css/style.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 const JoinForm = () => {
+    const styleCheckbox = {
+
+    }
     return (
         <>
             {/* Breadcrumb Section Begin */}
@@ -38,6 +41,7 @@ const JoinForm = () => {
                                     <div class="checkout__input">
                                         <p>아이디 &nbsp;<span>*</span></p>
                                         <input type="text" />
+                                        <button type="button" id='duplicate-id-check'>아이디 중복체크</button>
                                     </div>
                                     <div class="checkout__input">
                                         <p>비밀번호&nbsp;<span>*</span></p>
