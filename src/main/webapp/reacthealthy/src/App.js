@@ -9,6 +9,7 @@ import CrewBoard from './views/crewdetail';
 import QuestionForm from './views/questionform';
 import Question from './views/question';
 import JoinForm from './views/join';
+import LoginForm from "./views/login";
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
 
       {/* 회원가입 */}
       <Route path='/join' element={<JoinForm/>} />
+        {/* 로그인 */}
+        <Route path='/login' element={<LoginForm/>} />
     </Routes>
   );
 }
