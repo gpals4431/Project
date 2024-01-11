@@ -39,10 +39,18 @@ dependencies {
     implementation 'javax.servlet:jstl:1.2'
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
 
-
     //스프링 시큐리티 적용
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.1.RELEASE'
+
+    //스프링부트의 JSP 제한 사항때문에 설정해보는 것 -
+    // => spring-boot-starter-web에 tomcat이 포함되어 있지만, JSP 엔진은 미포함
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    //JSTL
+    implementation 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+    implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api:3.0.0'
+    implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl:3.0.1'
+
 }
 
 tasks.named('bootBuildImage') {
